@@ -1,3 +1,6 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,172 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar-brand {
+  font-size: 2rem !important;
+  color: #565387 !important;
+}
+
+.navbar a:hover {
+  color: #3498db !important;
+}
+
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+
+/* home brand-name css */
+.text-primary:hover {
+  color: rgb(136, 214, 240) !important;
+  cursor: pointer;
+}
+
+.d-flex {
+  margin-top: 25vh !important;
+  justify-content: center !important;
+}
+
+.btn,
+.btn-outline-primary {
+  border-radius: 10px !important;
+  transition: 0.5s !important;
+}
+
+/* homepage right image css */
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* homepage-text-animation */
+.col-md-6,
+.pt-5,
+.pt-lg-0,
+.order-2,
+.order-lg-1 {
+  animation: text 2s ease-in-out;
+}
+
+@keyframes text {
+  0% {
+    transform: translateY(500px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* service-page card css */
+.card {
+  border-bottom: 3px solid #2db6fa !important;
+  box-shadow: 0px 0 30px rgb(1 41 112 / 8%);
+  height: 100%;
+  padding: 60px 30px;
+  text-align: center;
+  transition: 0.5s;
+  border-radius: 5px;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+.card:hover {
+  background: #2db6fa !important;
+  color: white !important;
+}
+.btn-read {
+  align-items: center !important;
+}
+.btn-read:hover {
+  color: white;
+}
+
+/* about-page image animation */
+#about .img-fluid,
+.animated {
+  animation: right-left 2s ease-in-out;
+}
+@keyframes right-left {
+  0% {
+    transform: translateX(550px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* contact-us page design */
+.contact .card-info {
+  color: #444444 !important;
+  padding: 30px !important;
+}
+
+#address {
+  animation: left-right 2s ease-in-out;
+}
+@keyframes left-right {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+#form {
+  animation: right-left 2s ease-in-out;
+}
+@keyframes right-left {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* navbar social icons spacing */
+.social-link i {
+  display: inline-block;
+  margin: 0 5px !important;
+  transition: 0.5s !important;
+}
+.social-link i:hover {
+  color: skyblue !important;
+}
+
+/* useful links alignment */
+.footer-link ul {
+  list-style: none;
+  text-align: justify;
+  font-weight: 800 !important;
+  font-size: 13px;
+  cursor: pointer;
+}
+.footer-link li {
+  margin: 10px 0;
+}
+
+/* footer-contactus */
+.footer-link {
+  text-align: justify;
+  font-size: 14px !important;
 }
